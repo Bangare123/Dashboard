@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<style>
+    .skills{
+        margin-left: 270px;
+        height: 100vh;
+        width: calc(100% - 270px);
+        border: 2px solid black;
+        padding: 20px;
+        overflow-y: auto;
+    }
+    .box-one{
+        background-color:#e0e2e7;
+        border: none;
+        width: 250px;
+        height: 250px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 5px;
+        transition:  all ease 0.5s ;  
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .box-one:hover{
+        background: #5a9d8a;
+        transform: scale(1.05);
+        transition:  all ease 0.5s;
+    }
+    .box-container{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .text ,h1,p{
+        font-size: 40px;
+        color: black;
+    }
+    .icon{
+        font-size: 60px;
+        color: orange;
+    }
+    
+</style>
+<body>
+    <div class="skills box-container">
+        <div class="text">
+            <h1>Skills:</h1>
+            <p>"Turning ideas into interactive experiences with code!"</p>
+        </div>
+        <div class="box-container">
+            <div class="box-one">
+                <i class="fa-brands fa-html5 icon"></i>
+                <h1>HTML</h1>
+            </div>
+            <div class="box-one">
+                <i class="fa-brands fa-css3 icon"></i>
+                <h1>CSS</h1>
+            </div>
+            <div class="box-one">
+                <i class="fab fa-js icon"></i>
+                <h1>JavaScript</h1>
+            </div>
+            <div class="box-one">
+                <i class="fa-brands fa-react icon"></i>
+                <h1>React</h1>
+            </div>
+            <div class="box-one">
+                <i class="fa-brands fa-python icon"></i>
+                <h1>Python</h1>
+            </div>
+            <div class="box-one">
+                <i class="fa-solid fa-database icon"></i>
+                <h1>SQL</h1>
+            </div>
+            <div class="box-one">
+                <i class="fa-brands fa-git icon"></i>
+                <h1>Git</h1>
+            </div>
+            <div class="box-one">
+                <i class="fa-brands fa-github icon"></i>
+                <h1>Github</h1>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+</body>
+</html>

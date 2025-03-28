@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+.certificate{
+    margin-left: 270px;
+    height: 100vh;
+    width: calc(100% - 270px);
+    border: 2px solid black;
+    padding: 0;
+    overflow-y: auto;   
+}
+.certificate-one{
+    border: none;  
+    height: 165px;
+    width: 90%;
+    background-color: rgb(216, 223, 231);  
+    transition:  all ease 0.5s;  
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.certificate-one,h1{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #283618;
+}
+.certificate-one:hover{
+        background-color: #adb5bd;
+        transform: scale(1.02);
+        transition:  all ease 0.5s;
+    }
+.certificate-container{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+}
+</style>
+<body>
+    <div class="certificate">
+        <div class="certificate-container">
+            <div class="certificate-one">
+              <h1>Google</h1>
+            </div>
+            <div class="certificate-one">
+               <h1>TCS </h1>
+            </div>
+            <div class="certificate-one">
+                <h1> Accenture </h1>
+            </div>
+            <div class="certificate-one">
+                <h1>NPTEL</h1>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+.education{
+    margin-left: 270px;
+    height: 100vh;
+    width: calc(100% - 270px);
+    border: 2px solid black;
+    padding: 0;
+    overflow-y: auto;
+    
+}
+.education-one{
+    border: none;  
+    height: 165px;
+    width: 98%;
+    background-color: rgb(216, 223, 231);  
+    transition:  all ease 0.5s;  
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.education-one,h1{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #283618;
+}
+.education-one:hover{
+        background-color: #adb5bd;
+        transform: scale(1.02);
+        transition:  all ease 0.5s;
+    }
+.education-container{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+}
+</style>
+<body>
+    <div class="education">
+        <div class="education-container">
+            <div class="education-one">
+              <h1>Master of Computer Application (MCA) </h1>
+            </div>
+            <div class="education-one">
+               <h1> Bachelor of Computer Application (BCA) </h1>
+            </div>
+            <div class="education-one">
+                <h1> Higher Secondary School (HSC) </h1>
+            </div>
+            <div class="education-one">
+                <h1>Secondary School Certificate (SSC)</h1>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
+
