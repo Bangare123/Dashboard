@@ -8,7 +8,7 @@
 </head>
 <style>
     .skills{
-        margin-left: 270px;
+        margin-left: 260px;
         height: 100vh;
         width: calc(100% - 270px);
         border: 2px solid black;
@@ -16,7 +16,7 @@
         overflow-y: auto;
     }
     .box-one{
-        background-color:#e0e2e7;
+        background-color:#d7e2e3;
         border: none;
         width: 250px;
         height: 250px;
@@ -43,11 +43,17 @@
         font-size: 40px;
         color: black;
     }
-    .icon{
-        font-size: 60px;
-        color: orange;
-    }
     
+.collapse-content .skills{
+    margin-left: 88px;
+    width: 94%;
+}
+
+@media (max-width: 768px) {
+    .skills{
+    margin-left: 88px;
+    width: 94%;
+} }
 </style>
 <body>
     <div class="skills box-container">
@@ -57,35 +63,35 @@
         </div>
         <div class="box-container">
             <div class="box-one">
-                <i class="fa-brands fa-html5 icon"></i>
+                <i class="fa-brands fa-html5 " style="color: rgb(255, 2, 2); font-size: 60px;"></i>
                 <h1>HTML</h1>
             </div>
             <div class="box-one">
-                <i class="fa-brands fa-css3 icon"></i>
+                <i class="fa-brands fa-css3" style="color: #8ac926; font-size: 60px;" ></i>
                 <h1>CSS</h1>
             </div>
             <div class="box-one">
-                <i class="fab fa-js icon"></i>
+                <i class="fab fa-js icon" style="color: orange; font-size: 60px;"></i>
                 <h1>JavaScript</h1>
             </div>
             <div class="box-one">
-                <i class="fa-brands fa-react icon"></i>
+                <i class="fa-brands fa-react "style="color: #3f37c9; font-size: 60px;"></i>
                 <h1>React</h1>
             </div>
             <div class="box-one">
-                <i class="fa-brands fa-python icon"></i>
+                <i class="fa-brands fa-python" style="color: #c44536; font-size: 60px;"></i>
                 <h1>Python</h1>
             </div>
             <div class="box-one">
-                <i class="fa-solid fa-database icon"></i>
+                <i class="fa-solid fa-database "style="color: #1d2d44; font-size: 60px;"></i>
                 <h1>SQL</h1>
             </div>
             <div class="box-one">
-                <i class="fa-brands fa-git icon"></i>
+                <i class="fa-brands fa-git" style="color: #f72585; font-size: 60px;"></i>
                 <h1>Git</h1>
             </div>
             <div class="box-one">
-                <i class="fa-brands fa-github icon"></i>
+                <i class="fa-brands fa-github " style="color: black; font-size: 60px;"></i>
                 <h1>Github</h1>
             </div>
             

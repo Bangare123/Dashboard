@@ -47,9 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(response => response.text())
             .then(data => {
                 document.querySelector('.content').innerHTML = data;
-                document.querySelector('.dashboard-home').style.display ="none";
-            })
-            .catch(error => console.error('Error loading page:', error));
+                document.querySelector('.dashboard-home').style.display ="none";            
+        }).catch(error => console.error('Error loading page:', error));
     }
 
 
@@ -58,3 +57,49 @@ function showDashboard() {
     document.querySelector('.content').innerHTML = ""; // Clear loaded content
     document.querySelector('.dashboard-home').style.display = "block"; // Show home section
 }
+
+//toggle button
+const body = document.querySelector("body"),
+    sidebar = body.querySelector(".sidebar"),
+    toggle = body.querySelector(".toggle"),
+    contentArea = body.querySelector(".content")
+
+    sidebar.classList.remove("close"); // Ensure sidebar is open initially
+    toggle.addEventListener("click",()=>{
+        sidebar.classList.toggle("close"); 
+        contentArea.classList.toggle("collapse-content"); 
+    })
+
+    if(sidebar.classList.contains("close")){
+        contentArea.classList.add("collapse-content");
+    }else{
+        contentArea.classList.remove("collapse-content");
+    }
+
+    //functionn for staying link active.
+    function setActive(element) {
+        const navLinks = document.querySelectorAll('.nav-link');
+    
+        // Remove active class and hide indicators
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            const indicator = link.querySelector('.active-indicator');
+            if (indicator) indicator.style.display = 'none';
+        });
+    
+        // Set active and show indicator
+        element.parentElement.classList.add('active');
+        const indicator = element.querySelector('.active-indicator');
+        if (indicator) indicator.style.display = 'inline-block';
+    }
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll('.nav-link');
+    
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            const indicator = link.querySelector('.active-indicator');
+            if (indicator) indicator.style.display = 'none';
+        });
+    });
+    

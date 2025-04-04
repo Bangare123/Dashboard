@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+
+.projects-section {
+  background-color: #f4f6f8;
+  padding: 40px;
+  margin-left: 260px;
+  border: 2px solid black;
+  height: 100%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.project-card h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.collapse-content .projects-section{
+    margin-left: 88px;
+    width: 94%;
+}
+
+@media (max-width: 768px) {
+    .projects-section{
+    margin-left: 88px;
+    width: 94%;
+} }
+</style>
+<body>
+  <section class="projects-section">
+    <h1 class="section-title">My Projects</h1>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h2>Project One</h2>
+        <p>A web application that allows users to track their daily tasks efficiently.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h2>Project Two</h2>
+        <p>An e-commerce platform with cart, payment, and product management features.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h2>Project Three</h2>
+        <p>A portfolio website to showcase personal projects and skills using React.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h2>Project Four</h2>
+        <p>A weather app fetching live data from an external API with a clean UI.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

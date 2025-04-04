@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dashboard.css">
     <title>Document</title>
 </head>
 <style>
     
 .education{
-    margin-left: 270px;
+    margin-left: 260px;
     height: 100vh;
     width: calc(100% - 270px);
     border: 2px solid black;
@@ -17,49 +18,88 @@
     
 }
 .education-one{
+    margin: 50px 30px 50px 50px;
     border: none;  
-    height: 165px;
-    width: 98%;
-    background-color: rgb(216, 223, 231);  
+    height: 265px;
+    width: 40%;
+    background-color: #2f2f38;  
     transition:  all ease 0.5s;  
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.education-one,h1{
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 30px;
-    color: #283618;
+p{
+    margin: 3%;
+    font-size: 2rem;
+    color: #ede6e6;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 .education-one:hover{
-        background-color: #adb5bd;
-        transform: scale(1.02);
-        transition:  all ease 0.5s;
+    background-color: #354f52;
+    color: rgb(239, 247, 247);
+    transform: scale(1.02);
+    transition:  all ease 0.5s;
     }
 .education-container{
     
     display: flex;
-    flex-direction: column;
-    gap: 15px;  
+    flex-direction: row;
+    gap: 5px;  
+    flex-wrap: wrap;
 }
+
+.collapse-content .education{
+    margin-left: 88px;
+    width: 94%;
+}
+@media (max-width: 768px) {
+    .education{
+    margin-left: 88px;
+    width: 84%;
+}
+
+.education-one{
+    margin: 50px 30px 50px 50px;
+    border: none;  
+    height: 265px;
+    width: 80%;
+    background-color: #2f2f38;  
+    transition:  all ease 0.5s;  
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+}
+
 </style>
 <body>
+    
     <div class="education">
         <div class="education-container">
             <div class="education-one">
-              <h1>Master of Computer Application (MCA) </h1>
+              <p>Master of Computer Application (MCA) </p>
+              <p>Pratibha institute of business management, Pune.</p>
+              <p>64.02 %</p>
+            </div>
+            <div class="education-one ">
+               <p> Bachelor of Computer Application (BCA) </p>
+               <p> Dr. Ambedkar college, dikshabhoomi, Nagpur.</p>
+               <p>74.30 %</p>
             </div>
             <div class="education-one">
-               <h1> Bachelor of Computer Application (BCA) </h1>
+                <p> Higher Secondary School (HSC) </p>
+                <p> Jakadtar jr. college, Bhandara.</p>
+                <p>78.30 %</p>
             </div>
             <div class="education-one">
-                <h1> Higher Secondary School (HSC) </h1>
-            </div>
-            <div class="education-one">
-                <h1>Secondary School Certificate (SSC)</h1>
+                <p>Secondary School Certificate (SSC)</p>
+                <p>M.K.M.Vidyalaya, Musewadi.</p>
+                <p>74.30 %</p>
             </div>  
         </div>
     </div>
+    <script src="Dashboard.js"></script>
 </body>
 </html>
 

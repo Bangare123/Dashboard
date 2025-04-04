@@ -34,51 +34,59 @@
                 <ul class="menu-links">
                     
                     <li class="nav-link">
-                        <a href="#" onclick="showDashboard()"> <!-- function for showing content only in dashboard not whole project-->
+                        <a href="#" class="open"   onclick="showDashboard(); setActive(this)"> <!-- function for showing content only in dashboard not whole project-->
                             <i class="fa-solid fa-house-user icon"></i>
                             <span class="text nav-text">Dashboard</span>
+                            <i class="fa-solid fa-circle-check active-indicator"></i>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#" onclick="loadContent('Education.html')">
+                        <a href="#" onclick="loadContent('Education.html'); setActive(this)">
                             <i class="fa-solid fa-user-graduate icon"></i>
                             <span class="text nav-text">Education</span>
+                            <i class="fa-solid fa-circle-check active-indicator"></i>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#" onclick="loadContent('Skills.html')">
+                        <a href="#" onclick="loadContent('Skills.html'); setActive(this)">
                             <i class="fa-solid fa-chalkboard-user icon"></i>
                             <span class="text nav-text">Skills</span>
+                            <i class="fa-solid fa-circle-check active-indicator"></i>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="#" onclick="loadContent('experience.html'); setActive(this) " >
                             <i class="fa-solid fa-face-smile icon"></i>
                             <span class="text nav-text">Experience</span>
+                            <i class="fa-solid fa-circle-check active-indicator"></i>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="#" onclick="loadContent('Projects.html'); setActive(this)">
                             <i class="fa-solid fa-folder icon"></i>
                             <span class="text nav-text">Projects</span>
+                            <i class="fa-solid fa-circle-check active-indicator"></i>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="https://github.com/Bangare123?tab=repositories" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Bangare123?tab=repositories" target="_blank" rel="noopener noreferrer" onclick="setActive(this)" >
                             <i class="fa-brands fa-square-github icon"></i>
                             <span class="text nav-text">Github</span>
+                            <i class="fa-solid fa-circle-check active-indicator"></i>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="https://www.linkedin.com/in/aditya-r-bangare-164196191/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/aditya-r-bangare-164196191/" target="_blank" rel="noopener noreferrer" onclick="setActive(this)">
                             <i class="fa-brands fa-linkedin icon"></i>
                             <span class="text nav-text">LinkedIN</span>
+                             <i class="fa-solid fa-circle-check active-indicator"></i>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#" onclick="loadContent('certificates.html')">
+                        <a href="#" onclick="loadContent('certificates.html'); setActive(this)">
                             <i class="fa-solid fa-award icon"></i>
                             <span class="text nav-text">Certificates</span>
+                            <i class="fa-solid fa-circle-check active-indicator"></i>
                         </a>
                     </li>
                     
@@ -86,7 +94,7 @@
             </div>
         
             <div class="bottom-content">
-                <li class="">
+                <li class="nav-link">
                     <a href="#">
                         <i class="fa-solid fa-right-from-bracket icon"></i>
                         <span class="text nav-text" id="logoutBtn">Logout</span>
@@ -95,8 +103,6 @@
             </div>
         </div>
     </nav>
-    
-    <div class="content"></div>
     <div class="dashboard-home">
         <div class="aboutMe">
             <img src="1myphoto.jpg" alt="photo">
@@ -104,6 +110,8 @@
         <h1>Hii..! I'm Aditya</h1>
         <p>"Passionate about creating a amazing websites."</p>
     </div>
+    <div class="content"></div>
+    
     <script src="Dashboard.js"></script>
     
 </body>

@@ -8,7 +8,7 @@
 }
 
 *{
-    font-family: "Advent Pro", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,6 +23,8 @@ body{
     font-size: 16px;
     font-weight: 500;
     color: var(--text-color); 
+    transition: all 0.4s ease;
+    white-space: nowrap;
 }
   
 .sidebar .image{
@@ -39,6 +41,7 @@ body{
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: all 0.4s ease ;
+    
     
 }
 .sidebar .close{
@@ -85,13 +88,14 @@ header .image-text .header-text{
     transform: translateY(-50%);
     height: 25px;
     width: 25px;
-    background: var(--primary-color);
+    background:var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     color: var(--sidebar-color);
     font-size: 15px;
+    z-index: 9999;
 }
 
 .sidebar li{
@@ -139,8 +143,8 @@ header .image-text .header-text{
 .sidebar li a:hover{
     background: var(--primary-color);
     transform: scale(1.05);
-}
 
+}
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text{
     color: var(--sidebar-color)
@@ -163,18 +167,18 @@ header .image-text .header-text{
 
 
 .dashboard-home{
-    margin-left: 270px;
-    height: 100vh;
+    position: relative;
+    left: 260px;
+    height: 100%;
     width: calc(100% - 270px);
-    border: 5px solid black;
-    padding: 20px;
+    border: 2px solid black;
     overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    padding: 20px;
     background: #0f0c29; 
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+    transition:all 0.4s ease  ;
+    
 }
 
 .dashboard-home h1,p{
@@ -194,4 +198,69 @@ header .image-text .header-text{
     display: flex;
     align-items: center; 
     flex-direction: column;
+}
+
+.sidebar.close{
+    width: 88px;
+}
+
+.sidebar.close .text{
+    opacity: 0;
+}
+
+.sidebar.close header .toggle{
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.sidebar.close ~ .dashboard-home{
+    left: 88px;
+    width: 94%;
+}
+
+.collapse-content .education{
+    left: 88px;
+    width: calc(100% - 88px);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 88px; /* Default to collapsed on small screens */
+    }
+
+    .sidebar .text {
+        opacity: 0; /* Hide text in collapsed state */
+    }
+
+    .sidebar.close {
+        width: 260px; /* Expand sidebar when toggled */
+    }
+
+    .sidebar.close .text {
+        opacity: 1; /* Show text when expanded */
+    }
+
+    .dashboard-home {
+        left: 88px;
+        width: calc(100% - 88px);
+    }
+
+    .sidebar.close ~ .dashboard-home {
+        left: 260px;
+        width: calc(100% - 260px);
+    }
+}
+.nav-link.active {
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+  
+  .nav-link.active .icon,
+  .nav-link.active .text {
+    color: rgb(7, 0, 0);
+  }
+
+.nav-link,a{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
