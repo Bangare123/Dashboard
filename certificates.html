@@ -1,26 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    .certificates{
-        margin-left: 260px;
-        border: 2px solid black;
-        height: 100vh;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello, World!</title>
+  </head>
+  <style>
+    .card-container {
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 50px;
+      flex-wrap: wrap;
+      border: 2px solid black;
+      height: 100%;
+      margin-left: 260px;
     }
-    
-.collapse-content .certificates{
-    margin-left: 88px;
-    width: 94%;
-}
 
-</style>
-<body>
-    <div class="certificates">
-    <h1>This is certificates</h1>
-</div>
-</body>
+    .card {
+      width: 420px;
+      height: 310px;
+      background: #09151e;
+      color: black;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+      border-radius: 10px;
+    }
+    .card,
+    h1 {
+      color: #f0f0f0;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .clickbtn {
+      background-color: #c2fbd7;
+      border-radius: 100px;
+      box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+        rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+        rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+        rgba(44, 187, 99, 0.15) 0 16px 32px;
+      color: green;
+      cursor: pointer;
+      display: inline-block;
+      font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto,
+        sans-serif;
+      padding: 7px 20px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 250ms;
+      border: 0;
+      font-size: 16px;
+    }
+
+    .clickbtn:hover {
+      box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+        rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+        rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+        rgba(44, 187, 99, 0.25) 0 16px 32px;
+      transform: scale(1.05) rotate(-1deg);
+    }
+
+    /* Fullscreen styles */
+    .fullscreen {
+      margin-left: 260px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 85%;
+      height: 95%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .fullscreen img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .collapse-content .card-container {
+      margin-left: 88px;
+      width: 94%;
+    }
+
+    @media (max-width: 768px) {
+      .card-container {
+        margin-left: 88px;
+        width: 94%;
+      }
+    }
+    .cardimg {
+      width: 420px;
+      height: 180px;
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <img src="img1.jpg" alt="Google" class="cardimg" />
+        <h1>Google - Digital Marketing</h1>
+        <button type="button" class="clickbtn" data-img="certificate1.jpg">
+          Click Me!
+        </button>
+      </div>
+
+      <div class="card">
+        <img src="SQL.png" alt="Google" class="cardimg" />
+        <h1>SimpliLearn - SQL</h1>
+        <button type="button" class="clickbtn" data-img="certificate2.jpg">
+          Click Me!
+        </button>
+      </div>
+
+      <div class="card">
+        <img src="python.png" alt="Google" class="cardimg" />
+        <h1>SevenMentor - Python</h1>
+        <button type="button" class="clickbtn" data-img="certificate3.jpg">
+          Click Me!
+        </button>
+      </div>
+
+      <div class="card" data-img="img4.png">
+        <img src="img4.png" alt="Google" class="cardimg" />
+        <h1>TCS - Communication Skills</h1>
+        <button type="button" class="clickbtn" data-img="certificate4.png">
+          Click Me!
+        </button>
+      </div>
+    </div>
+
+    <div class="fullscreen" id="fullscreen">
+      <img id="fullscreen-img" src="" alt="Full Image" />
+      <span class="close-btn" onclick="closeFullscreen()">✖</span>
+    </div>
+
+    <script src="Dashboard.js"></script>
+  </body>
 </html>

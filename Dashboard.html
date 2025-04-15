@@ -1,118 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Dashboard.css">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Dashboard.css" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <nav class="sidebar close">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                    <img src="bird.png" alt="logo">
-                </span>
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="bird.png" alt="logo" />
+          </span>
 
-                <div class="text header-text">
-                    <span class="name">Aditya Ravi Bangare</span>
-                    <span class="profession">Web developer</span>
-                </div>           
-            </div>
-            <i class="fa-solid fa-greater-than toggle"></i>
-        </header>
-
-        <div class="menu-bar">
-            <div class="menu">
-                <li class="search-box">
-                    <i class="fa-solid fa-magnifying-glass icon"></i>
-                    <input type="search" placeholder="Search...">
-                </li>
-
-                <ul class="menu-links">
-                    
-                    <li class="nav-link">
-                        <a href="#" class="open"   onclick="showDashboard(); setActive(this)"> <!-- function for showing content only in dashboard not whole project-->
-                            <i class="fa-solid fa-house-user icon"></i>
-                            <span class="text nav-text">Dashboard</span>
-                            <i class="fa-solid fa-circle-check active-indicator"></i>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#" onclick="loadContent('Education.html'); setActive(this)">
-                            <i class="fa-solid fa-user-graduate icon"></i>
-                            <span class="text nav-text">Education</span>
-                            <i class="fa-solid fa-circle-check active-indicator"></i>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#" onclick="loadContent('Skills.html'); setActive(this)">
-                            <i class="fa-solid fa-chalkboard-user icon"></i>
-                            <span class="text nav-text">Skills</span>
-                            <i class="fa-solid fa-circle-check active-indicator"></i>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#" onclick="loadContent('experience.html'); setActive(this) " >
-                            <i class="fa-solid fa-face-smile icon"></i>
-                            <span class="text nav-text">Experience</span>
-                            <i class="fa-solid fa-circle-check active-indicator"></i>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#" onclick="loadContent('Projects.html'); setActive(this)">
-                            <i class="fa-solid fa-folder icon"></i>
-                            <span class="text nav-text">Projects</span>
-                            <i class="fa-solid fa-circle-check active-indicator"></i>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="https://github.com/Bangare123?tab=repositories" target="_blank" rel="noopener noreferrer" onclick="setActive(this)" >
-                            <i class="fa-brands fa-square-github icon"></i>
-                            <span class="text nav-text">Github</span>
-                            <i class="fa-solid fa-circle-check active-indicator"></i>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="https://www.linkedin.com/in/aditya-r-bangare-164196191/" target="_blank" rel="noopener noreferrer" onclick="setActive(this)">
-                            <i class="fa-brands fa-linkedin icon"></i>
-                            <span class="text nav-text">LinkedIN</span>
-                             <i class="fa-solid fa-circle-check active-indicator"></i>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#" onclick="loadContent('certificates.html'); setActive(this)">
-                            <i class="fa-solid fa-award icon"></i>
-                            <span class="text nav-text">Certificates</span>
-                            <i class="fa-solid fa-circle-check active-indicator"></i>
-                        </a>
-                    </li>
-                    
-                </ul>
-            </div>
-        
-            <div class="bottom-content">
-                <li class="nav-link">
-                    <a href="#">
-                        <i class="fa-solid fa-right-from-bracket icon"></i>
-                        <span class="text nav-text" id="logoutBtn">Logout</span>
-                    </a>
-                </li>
-            </div>
+          <div class="text header-text">
+            <span class="name">Aditya Ravi Bangare</span>
+            <span class="profession">Web developer</span>
+          </div>
         </div>
+        <i class="fa-solid fa-greater-than toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+            <input type="search" placeholder="Search..." />
+          </li>
+
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="#" class="open" onclick="showDashboard()">
+                <!-- function for showing content only in dashboard not whole project-->
+                <i class="fa-solid fa-house-user icon"></i>
+                <span class="text nav-text">Dashboard</span>
+                <i class="fa-solid fa-circle-check active-indicator"></i>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#" onclick="loadContent('Education.html')">
+                <i class="fa-solid fa-user-graduate icon"></i>
+                <span class="text nav-text">Education</span>
+                <i class="fa-solid fa-circle-check active-indicator"></i>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#" onclick="loadContent('Skills.html')">
+                <i class="fa-solid fa-chalkboard-user icon"></i>
+                <span class="text nav-text">Skills</span>
+                <i class="fa-solid fa-circle-check active-indicator"></i>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#" onclick="loadContent('experience.html')">
+                <i class="fa-solid fa-face-smile icon"></i>
+                <span class="text nav-text">Experience</span>
+                <i class="fa-solid fa-circle-check active-indicator"></i>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#" onclick="loadContent('Projects.html')">
+                <i class="fa-solid fa-folder icon"></i>
+                <span class="text nav-text">Projects</span>
+                <i class="fa-solid fa-circle-check active-indicator"></i>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a
+                href="https://github.com/Bangare123?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="setActive(this)"
+              >
+                <i class="fa-brands fa-square-github icon"></i>
+                <span class="text nav-text">Github</span>
+                <i class="fa-solid fa-circle-check active-indicator"></i>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a
+                href="https://www.linkedin.com/in/aditya-r-bangare-164196191/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-linkedin icon"></i>
+                <span class="text nav-text">LinkedIN</span>
+                <i class="fa-solid fa-circle-check active-indicator"></i>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#" onclick="loadContent('certificates.html')">
+                <i class="fa-solid fa-award icon"></i>
+                <span class="text nav-text">Certificates</span>
+                <i class="fa-solid fa-circle-check active-indicator"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+          <li class="nav-link">
+            <a href="#">
+              <i class="fa-solid fa-right-from-bracket icon"></i>
+              <span class="text nav-text" id="logoutBtn">Logout</span>
+            </a>
+          </li>
+        </div>
+      </div>
     </nav>
     <div class="dashboard-home">
-        <div class="aboutMe">
-            <img src="1myphoto.jpg" alt="photo">
+      <div class="me">
+        <div class="topdata">
+          <div class="data">
+            <p>Hello! it's Me</p>
+            <p style="font-size: 56px; font-weight: 700; margin: -3px 0">
+              Aditya R Bangare
+            </p>
+            <p>I'm a <span>web developer</span></p>
+          </div>
+          <div class="aboutMe">
+            <img src="1myphoto.jpg" alt="photo" />
+          </div>
         </div>
-        <h1>Hii..! I'm Aditya</h1>
-        <p>"Passionate about creating a amazing websites."</p>
+        <section class="bottom">
+          Passionate Frontend Developer with a strong foundation in HTML, CSS,
+          JavaScript, and React.js. Completed a hands-on internship, gaining
+          experience in building responsive, user-friendly web applications and
+          working with modern tools like Tailwind CSS, Bootstrap, Git, and APIs.
+          Skilled in creating interactive UI components, optimizing performance,
+          and implementing mobile-first designs.
+        </section>
+        <div class="mobdata">
+          <p><i class="fa-solid fa-phone"></i> 9527459675</p>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=bangareaditya321@gmail.com&su=Hello&body=Hi%20there!"
+            target="_blank"
+            style="color: aqua; align-items: center"
+            rel="noopener"
+          >
+            <i class="fa-solid fa-envelope"></i> bangareaditya321@gmail.com
+          </a>
+
+          <p><i class="fa-solid fa-location-dot"></i> Nagpur</p>
+        </div>
+      </div>
     </div>
     <div class="content"></div>
-    
+
     <script src="Dashboard.js"></script>
-    
-</body>
+  </body>
 </html>

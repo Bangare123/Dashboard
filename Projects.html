@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Projects</title>
-  <link rel="stylesheet" href="styles.css" />
 </head>
 <style>
 
@@ -13,7 +12,7 @@
   padding: 40px;
   margin-left: 260px;
   border: 2px solid black;
-  height: 100%;
+  height: 100vh;
 }
 
 .section-title {
@@ -36,6 +35,10 @@
   padding: 20px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.05);
   transition: transform 0.2s, box-shadow 0.2s;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card:hover {
@@ -72,36 +75,36 @@
     width: 94%;
 }
 
-@media (max-width: 768px) {
-    .projects-section{
-    margin-left: 88px;
-    width: 94%;
-} }
 </style>
 <body>
   <section class="projects-section">
     <h1 class="section-title">My Projects</h1>
     <div class="projects-grid">
+
       <div class="project-card">
-        <h2>Project One</h2>
-        <p>A web application that allows users to track their daily tasks efficiently.</p>
-        <a href="#" class="btn">View Project</a>
+        <h2>Resume Builder</h2>
+        <p style="font-size: 20px;">A web application that allows users to track their daily tasks efficiently.An e-commerce platform with cart, payment, and product management features.</p>
+        <a href="https://github.com/Bangare123/ResumeBuilder1" target="_blank" rel="noopener" class="btn">View Project</a>
       </div>
+
       <div class="project-card">
-        <h2>Project Two</h2>
+        <h2>Dashboard</h2>
         <p>An e-commerce platform with cart, payment, and product management features.</p>
         <a href="#" class="btn">View Project</a>
       </div>
+
       <div class="project-card">
-        <h2>Project Three</h2>
+        <h2>WeatherAPI</h2>
         <p>A portfolio website to showcase personal projects and skills using React.</p>
         <a href="#" class="btn">View Project</a>
       </div>
+
       <div class="project-card">
         <h2>Project Four</h2>
         <p>A weather app fetching live data from an external API with a clean UI.</p>
         <a href="#" class="btn">View Project</a>
       </div>
+
     </div>
   </section>
 </body>
