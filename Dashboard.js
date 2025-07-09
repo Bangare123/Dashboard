@@ -7,19 +7,21 @@ document.addEventListener("DOMContentLoaded", function () {
     loginForm.addEventListener("submit", function (event) {
       event.preventDefault();
 
-      let username = document.getElementById("username").value;
-      let password = document.getElementById("password").value;
+      // let username = document.getElementById("username").value;
+      // let password = document.getElementById("password").value;
 
-      const validUsername = "admin";
-      const validPassword = "Jobs@123#";
+      // const validUsername = "admin";
+      // const validPassword = "Jobs@123#";
 
-      if (username === validUsername && password === validPassword) {
-        localStorage.setItem("loggedIn", "true");
-        window.location.href = "Dashboard.html";
-      } else {
-        document.getElementById("error-message").textContent =
-          "Invalid username or password!";
-      }
+      //   if (username === validUsername && password === validPassword) {
+      //     localStorage.setItem("loggedIn", "true");
+      //     window.location.href = "Dashboard.html";
+      //   } else {
+      //     document.getElementById("error-message").textContent =
+      //       "Invalid username or password!";
+      //   }
+      localStorage.setItem("loggedIn", "true");
+      window.location.href = "Dashboard.html";
     });
   }
 
