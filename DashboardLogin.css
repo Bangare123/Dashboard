@@ -1,89 +1,94 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    display: flex;
-    justify-content:left;
-    align-items: center;
-    background-image: url("One.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-image: url("One.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#complete-box{
-    background-color: whitesmoke;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-    width: 400px;
-    height: 400px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin-left: 120px;
+#complete-box {
+  background-color: whitesmoke;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 120px;
 }
 
-.title{
-    font-size: 26px;
-    margin-bottom: 15px;
-    font-weight: bold;
-    border-bottom: 2px solid black;
-    display: inline-block;
-    padding-bottom: 5px;
+.title {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-bottom: 5px;
 }
-.input-field{
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid palevioletred;
-    outline: none;
-    font-size: 16px;
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid palevioletred;
+  outline: none;
+  font-size: 16px;
 }
-.btn{
-    color: whitesmoke;
-    background-color:#d83c7d;
-    border: none;
-    width: 100%;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+.btn {
+  color: whitesmoke;
+  background-color: #d83c7d;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }
-.or-text{
-    font-size: 18px;
-    padding: 5px;
+.or-text {
+  font-size: 18px;
+  padding: 5px;
 }
 
-.twitter{
-    width: 100%;
-    padding: 10px ;
-    font-size: 16px;
-    background-color: rgb(127, 127, 244);
-    color: white;
-    font-weight: bold;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: none;
-    display: flex;
-    align-items: center;
-    gap: 90px;
-    cursor: pointer;
+.twitter {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(127, 127, 244);
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 125px;
+  cursor: pointer;
 }
-.facebook{
-    width: 100%;
-    padding: 10px ;
-    font-size: 16px;
-    background-color: rgb(32, 32, 120);
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    gap: 90px;
-    cursor: pointer;
+.facebook {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(32, 32, 120);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 125px;
+  cursor: pointer;
+}
+.disabled-input {
+  cursor: not-allowed;
+  background-color: #f0f0f0;
+  color: #aaa;
 }
