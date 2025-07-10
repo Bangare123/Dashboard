@@ -1,7 +1,9 @@
-/education     /education.html      200
-/projects      /projects.html       200
-/skills        /skills.html         200
-/certificates  /certificates.html   200
-/dashboard     /dashboard.html      200
-/experience    /experience.html     200
-/              /dashboardlogin.html 200
+/education     /HTML/education.html      200
+/projects      /HTML/projects.html       200
+/skills        /HTML/skills.html         200
+/certificates  /HTML/certificates.html   200
+/dashboard     /HTML/dashboard.html      200
+/experience    /HTML/experience.html     200
+/              /HTML/dashboardlogin.html 200
+
+
