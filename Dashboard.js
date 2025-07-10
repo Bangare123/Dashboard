@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
       //       "Invalid username or password!";
       //   }
       localStorage.setItem("loggedIn", "true");
-      window.location.href = "Dashboard.html";
+      window.location.href = "/HTML/Dashboard.html";
     });
   }
 
