@@ -28,13 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
   if (logoutBtn) {
     logoutBtn.addEventListener("click", function () {
       localStorage.removeItem("loggedIn");
-      window.location.href = "DashboardLogin.html";
+      window.location.href = "/HTML/DashboardLogin.html";
     });
   }
 
   if (window.location.pathname.includes("Dashboard.html")) {
     if (!localStorage.getItem("loggedIn")) {
-      window.location.href = "DashboardLogin.html";
+      window.location.href = "/HTML/DashboardLogin.html";
     }
   }
 
